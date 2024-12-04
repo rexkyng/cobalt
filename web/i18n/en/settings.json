@@ -5,7 +5,7 @@
     "page.audio": "audio",
     "page.download": "downloading",
     "page.advanced": "advanced",
-    "page.debug": "debug information",
+    "page.debug": "info for nerds",
     "page.instances": "instances",
 
     "section.general": "general",
@@ -88,7 +88,7 @@
 
     "accessibility": "accessibility",
     "accessibility.transparency.title": "reduce visual transparency",
-    "accessibility.transparency.description": "reduces transparency of surfaces and disables blur effects. may also improve ui performance on low-end devices.",
+    "accessibility.transparency.description": "reduces transparency of surfaces and disables blur effects. may also improve ui performance on low performance devices.",
     "accessibility.motion.title": "reduce motion",
     "accessibility.motion.description": "disables animations and transitions whenever possible.",
 
@@ -108,19 +108,19 @@
     "privacy.tunnel.description": "cobalt will hide your ip address, browser info, and bypass local network restrictions. when enabled, files will also have readable filenames that otherwise would be gibberish.",
 
     "advanced.debug": "debug",
-    "advanced.debug.title": "enable debug features",
-    "advanced.debug.description": "gives you access to a page with various info that can be useful for debugging.",
+    "advanced.debug.title": "enable features for nerds",
+    "advanced.debug.description": "gives you easy access to app info that can be useful for debugging. enabling this does not affect functionality of cobalt in any way.",
 
     "advanced.data": "data management",
 
-    "processing.override": "default instance override",
-    "processing.override.title": "use the instance-provided processing server",
-    "processing.override.description": "if web instance provides its own default processing server, you can choose to use it over the main processing server. make sure it's a server by someone you trust.",
-
     "processing.community": "community instances",
-
     "processing.enable_custom.title": "use a custom processing server",
-    "processing.enable_custom.description": "cobalt will use a custom processing server if you choose to. even though cobalt has some security measures in place, we are not responsible for any damages done via a community instance, as we have no control over them.\n\nplease be mindful of what instances you use and make sure they're hosted by people you trust.",
+    "processing.enable_custom.description": "cobalt will use a custom processing instance if you choose to. even though cobalt has some security measures in place, we are not responsible for any damages done via a community instance, as we have no control over them.\n\nplease be mindful of what instances you use and make sure they're hosted by people you trust.",
 
-    "processing.custom.placeholder": "custom instance domain"
+    "processing.access_key": "instance access key",
+    "processing.access_key.title": "use an instance access key",
+    "processing.access_key.description": "cobalt will use this key to make requests to the processing instance instead of other authentication methods. make sure the instance supports api keys!",
+
+    "processing.custom_instance.input.alt_text": "custom instance domain",
+    "processing.access_key.input.alt_text": "u-u-i-d access key"
 }
