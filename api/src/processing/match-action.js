@@ -98,7 +98,7 @@ export default function({ r, host, audioFormat, isAudioOnly, isAudioMuted, disab
                             type: audioStreamType,
                             url: r.urls,
                             headers: r.headers,
-                            filename: r.audioFilename,
+                            filename: `${r.audioFilename}.${audioFormat}`,
                             isAudioOnly: true,
                             audioFormat,
                         })
@@ -145,7 +145,6 @@ export default function({ r, host, audioFormat, isAudioOnly, isAudioMuted, disab
                     break;
 
                 case "facebook":
-                case "vine":
                 case "instagram":
                 case "tumblr":
                 case "pinterest":
@@ -161,7 +160,7 @@ export default function({ r, host, audioFormat, isAudioOnly, isAudioMuted, disab
         case "audio":
             if (audioIgnore.includes(host) || (host === "reddit" && r.typeId === "redirect")) {
                 return createResponse("error", {
-                    code: "error.api.fetch.empty"
+                    code: "error.api.service.audio_not_supported"
                 })
             }
 

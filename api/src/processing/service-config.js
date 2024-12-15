@@ -30,7 +30,7 @@ export const services = {
             "reel/:id",
             "share/:shareType/:id"
         ],
-        subdomains: ["web"],
+        subdomains: ["web", "m"],
         altDomains: ["fb.watch"],
     },
     instagram: {
@@ -46,7 +46,7 @@ export const services = {
         altDomains: ["ddinstagram.com"],
     },
     loom: {
-        patterns: ["share/:id"],
+        patterns: ["share/:id", "embed/:id"],
     },
     ok: {
         patterns: [
@@ -143,10 +143,6 @@ export const services = {
         subdomains: ["mobile"],
         altDomains: ["x.com", "vxtwitter.com", "fixvx.com"],
     },
-    vine: {
-        patterns: ["v/:id"],
-        tld: "co",
-    },
     vimeo: {
         patterns: [
             ":id",
@@ -158,11 +154,17 @@ export const services = {
     },
     vk: {
         patterns: [
-            "video:userId_:videoId",
-            "clip:userId_:videoId",
-            "clips:duplicate?z=clip:userId_:videoId"
+            "video:ownerId_:videoId",
+            "clip:ownerId_:videoId",
+            "clips:duplicate?z=clip:ownerId_:videoId",
+            "videos:duplicate?z=video:ownerId_:videoId",
+            "video:ownerId_:videoId_:accessKey",
+            "clip:ownerId_:videoId_:accessKey",
+            "clips:duplicate?z=clip:ownerId_:videoId_:accessKey",
+            "videos:duplicate?z=video:ownerId_:videoId_:accessKey"
         ],
         subdomains: ["m"],
+        altDomains: ["vkvideo.ru", "vk.ru"],
     },
     youtube: {
         patterns: [
